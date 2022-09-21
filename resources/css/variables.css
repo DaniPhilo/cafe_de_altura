@@ -1,0 +1,10 @@
+:root {
+    /* Text */
+    --text-color-dark: #000;
+    --text-color-light: #fff;
+
+    /* Buttons */
+    --header-footer-btns: #515051;
+
+    --font-family: 'Outfit';
+}

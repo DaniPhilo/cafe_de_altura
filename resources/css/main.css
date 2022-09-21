@@ -73,7 +73,7 @@ header {
 }
 
 /* ps:coffee-hot */
-.logo > img {
+.logo>img {
     width: 20.53px;
     height: 24.93px;
 
@@ -277,3 +277,301 @@ nav>ul>li>a {
 
 /*** HERO ***/
 
+.hero-section {
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 48px 40px;
+    gap: 8px;
+
+    width: 1280px;
+    height: 486px;
+
+    background: rgba(227, 222, 215, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.hero-container {
+    /* Auto layout */
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+
+    width: 1200px;
+    height: 390px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+/* Hero content container */
+.hero-content {
+    /* Content */
+
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    width: 588px;
+    height: 232px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+
+}
+
+/* Pre-title */
+.hero-content>p:first-child {
+    width: 588px;
+    height: 24px;
+
+    /* H3 */
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+
+
+    /* Green */
+
+    color: #2A5B45;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+
+}
+
+/* Hero h1 */
+.hero-content>h1 {
+    width: 588px;
+    height: 88px;
+
+    /* H1 */
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 44px;
+    /* or 110% */
+
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+/* Hero paragraph */
+.hero-content>p:nth-of-type(2) {
+    width: 588px;
+    height: 32px;
+
+    /* Paragraph */
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    /* or 114% */
+
+
+    color: #111827;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+/* Hero buttons container */
+.hero-btn-container {
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    width: 321px;
+    height: 40px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
+
+/* Hero buttons */
+.hero-btn-container>button {
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 24px;
+    gap: 8px;
+
+    border: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+.hero-btn-container>button:first-child {
+    background-color: #1F1815;
+    color: #fff;
+}
+
+.hero-btn-container>button:last-child {
+    background-color: #2A5B45;
+    color: #fff;
+}
+
+/*** INFO-CARDS SECTION ***/
+
+.info-cards-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 147px;
+    gap: 24px;
+
+    width: 1280px;
+    height: 380px;
+}
+
+.info-cards-section > h2 {
+    font-family: 'Outfit';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+
+color: #000;
+}
+
+/* Cards */
+.info-cards-container {
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+}
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    gap: 16px;
+
+    width: 316px;
+    height: 232px;
+
+    /* White */
+
+    background: #FFFFFF;
+    /* Off white */
+
+    border: 1px solid #F7F5F3;
+    box-shadow: 0px 1px 4px rgba(227, 222, 215, 0.8);
+    border-radius: 8px;
+}
+
+/* Card icons */
+.info-card-icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    gap: 8px;
+
+    width: 64px;
+    height: 64px;
+
+    /* Green */
+
+    background: #2A5B45;
+    border-radius: 20px;
+}
+
+/* Cards text */
+.info-card>h3 {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+
+    text-align: center;
+
+    color: #2B2A2B;
+}
+
+.info-card>p {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    /* or 114% */
+
+    text-align: center;
+
+    color: #111827;
+}

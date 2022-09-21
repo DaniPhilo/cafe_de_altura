@@ -8,7 +8,8 @@
     box-sizing: border-box;
 }
 
-/* Header */
+/*** HEADER ***/
+
 header {
     /* Auto layout */
     display: flex;
@@ -72,7 +73,7 @@ header {
 }
 
 /* ps:coffee-hot */
-.svg-container>svg {
+.logo > img {
     width: 20.53px;
     height: 24.93px;
 
@@ -273,3 +274,6 @@ nav>ul>li>a {
 
     cursor: pointer;
 }
+
+/*** HERO ***/
+

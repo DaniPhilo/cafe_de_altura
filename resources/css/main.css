@@ -1,6 +1,3 @@
-@import url('variables.css');
-
-
 /* CSS RESET */
 * {
     margin: 0;
@@ -8,460 +5,158 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Outfit';
+}
+
 /*** HEADER ***/
 
 header {
-    /* Auto layout */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 40px;
-    gap: 34px;
 
-    width: 1280px;
-    height: 64px;
+    width: 100%;
+    height: 4rem;
+    padding: 0 3rem;
 
     background: #2B2A2B;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
+    color: #fff;
 }
 
 /* Logo */
 .logo {
-    /* Auto layout */
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    padding: 0px;
-    gap: 7.33px;
-
-    width: 213.86px;
-    height: 36px;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    gap: 0.5rem;
 }
 
-/* cafedealtura.com */
 .logo>span {
-    width: 186px;
-    height: 36px;
-
-    font-family: var(--font-family);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 23.4628px;
-    line-height: 35px;
-    /* identical to box height, or 150% */
-
-    color: var(--text-color-light);
-    opacity: 0.86;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    font-weight: 200;
+    font-size: 1.5rem;
 }
 
-/* ps:coffee-hot */
-.logo>img {
-    width: 20.53px;
-    height: 24.93px;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
-
-/* Menu wrapper */
+/* Navbar */
 nav>ul {
-    /* Auto layout */
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-
-    width: 512px;
-    height: 32px;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
     list-style-type: none;
 }
 
-/* Tabs */
 nav>ul>li {
-    /* Auto layout */
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 8px;
-    gap: 8px;
-
-    width: fit-content;
-    height: 32px;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    align-items: center;
+    padding: 0.5rem;
+    cursor: pointer;
 }
 
 /* Nav links */
 nav>ul>li>a {
-    width: fit-content;
-    height: 16px;
-
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 16px;
-    /* identical to box height, or 114% */
-
-    color: var(--text-color-light);
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
+    color: #fff;
     text-decoration: none;
+    font-weight: 400;
+    font-size: 0.9rem;
 }
 
 /* Phone and login btn */
 .phone-login-container {
-    /* Auto layout */
-
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    padding: 0px;
-    gap: 24px;
-
-    width: 288px;
-    height: 40px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 2;
-    flex-grow: 0;
+    gap: 1.5rem;
 }
 
 /* Phone button */
 .phone-container {
-    /* Auto layout */
-
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-    padding: 0px;
-    gap: 8px;
-
-    width: 134px;
-    height: 24px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
+    gap: 0.5rem;
     cursor: pointer;
-}
-
-.phone-container>span {
-    width: 102px;
-    height: 16px;
-
-    /* Button */
-
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 16px;
-    /* identical to box height, or 114% */
-
-
-    /* White */
-
-    color: var(--text-color-light);
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
 }
 
 /* Login btn */
 .login-btn {
-    /* Auto layout */
-
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 12px 24px;
-    gap: 8px;
-
-    width: 130px;
-    height: 40px;
-
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 16px;
-
-    background: var(--header-footer-btns);
+    font-size: 0.9rem;
+    padding: 0.75rem 1.5rem;
+    background: #515051;
+    color: #fff;
     border: none;
     border-radius: 4px;
-    color: var(--text-color-light);
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-
     cursor: pointer;
-}
-
-.login-btn-container>button {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 16px;
-    /* identical to box height, or 114% */
-
-    color: var(--text-color-light);
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 
 /* Cart button */
 .cart-btn {
-    width: 24px;
-    height: 24px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 3;
-    flex-grow: 0;
-
     cursor: pointer;
 }
 
 /*** HERO ***/
 
 .hero-section {
-    /* Auto layout */
-
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 48px 40px;
-    gap: 8px;
+    justify-content: center;
+    align-items: center;
 
-    width: 1280px;
-    height: 486px;
+    width: 100%;
+    padding: 3rem 2.5rem;
 
     background: rgba(227, 222, 215, 0.3);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
 }
 
 .hero-container {
-    /* Auto layout */
-
-    /* Auto layout */
-
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0px;
-    gap: 24px;
-
-    width: 1200px;
-    height: 390px;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
+    gap: 2.5rem;
 }
 
 /* Hero content container */
 .hero-content {
-    /* Content */
-
-
-    /* Auto layout */
-
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-
-    width: 588px;
-    height: 232px;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-
+    gap: 1rem;
 }
 
-/* Pre-title */
 .hero-content>p:first-child {
-    width: 588px;
-    height: 24px;
-
-    /* H3 */
-
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
-    /* identical to box height, or 133% */
-
-
-    /* Green */
-
     color: #2A5B45;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    align-self: stretch;
-
-}
-
-/* Hero h1 */
-.hero-content>h1 {
-    width: 588px;
-    height: 88px;
-
-    /* H1 */
-
-    font-family: 'Outfit';
-    font-style: normal;
     font-weight: 600;
-    font-size: 40px;
-    line-height: 44px;
-    /* or 110% */
-
-
-    color: #000000;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
 }
 
-/* Hero paragraph */
+.hero-content>h1 {
+    color: #000000;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
 .hero-content>p:nth-of-type(2) {
-    width: 588px;
-    height: 32px;
-
-    /* Paragraph */
-
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    /* or 114% */
-
-
     color: #111827;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 2;
-    align-self: stretch;
-    flex-grow: 0;
+    font-size: 0.8rem;
 }
 
 /* Hero buttons container */
 .hero-btn-container {
-    /* Auto layout */
-
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-
-    width: 321px;
-    height: 40px;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 3;
-    flex-grow: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 /* Hero buttons */
 .hero-btn-container>button {
-    /* Auto layout */
-
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 12px 24px;
-    gap: 8px;
-
+    padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 4px;
-
     cursor: pointer;
 }
 
@@ -475,6 +170,15 @@ nav>ul>li>a {
     color: #fff;
 }
 
+/* Hero img */
+.hero-img-container {
+    max-width: 600px;
+}
+.hero-img-container > img {
+    
+    border-radius: 20px;
+}
+
 /*** INFO-CARDS SECTION ***/
 
 .info-cards-section {
@@ -482,32 +186,24 @@ nav>ul>li>a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 48px 147px;
-    gap: 24px;
+    gap: 1.5rem;
 
-    width: 1280px;
-    height: 380px;
+    width: 100%;
+    padding: 3rem 9rem;
 }
 
-.info-cards-section > h2 {
-    font-family: 'Outfit';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 28px;
-
-color: #000;
+.info-cards-section>h2 {
+    color: #000;
+    font-weight: 400;
+    font-size: 1.5rem;
 }
 
 /* Cards */
 .info-cards-container {
-    /* Auto layout */
-
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .info-card {
@@ -515,17 +211,13 @@ color: #000;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 24px;
-    gap: 16px;
+    gap: 1rem;
 
     width: 316px;
     height: 232px;
-
-    /* White */
+    padding: 1.5rem;
 
     background: #FFFFFF;
-    /* Off white */
-
     border: 1px solid #F7F5F3;
     box-shadow: 0px 1px 4px rgba(227, 222, 215, 0.8);
     border-radius: 8px;
@@ -534,16 +226,10 @@ color: #000;
 /* Card icons */
 .info-card-icon-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 12px;
-    gap: 8px;
 
-    width: 64px;
-    height: 64px;
-
-    /* Green */
+    padding: 1rem;
 
     background: #2A5B45;
     border-radius: 20px;
@@ -551,27 +237,15 @@ color: #000;
 
 /* Cards text */
 .info-card>h3 {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
-    /* identical to box height, or 133% */
-
-    text-align: center;
-
     color: #2B2A2B;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 .info-card>p {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    /* or 114% */
-
-    text-align: center;
-
     color: #111827;
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.9rem;
 }

@@ -98,11 +98,6 @@ nav>ul>li>a {
     cursor: pointer;
 }
 
-/* Cart button */
-.cart-btn {
-    cursor: pointer;
-}
-
 /*** HERO ***/
 
 .hero-section {
@@ -735,6 +730,11 @@ footer {
     height: 310px;
     background-color: #1F1815;
     color: #fff;
+}
+.alt-footer {
+    position: relative;
+    width: 100%;
+    height: fit-content;
 }
 
 .footer-container {

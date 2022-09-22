@@ -198,7 +198,7 @@ nav>ul>li>a {
     width: 100%;
     padding: 3rem 1.5rem;
 
-    background-image: url('../images/coffee_background.jpg');
+    background-image: url('../images/img/coffee_background.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -352,6 +352,22 @@ nav>ul>li>a {
     font-weight: 600;
     font-size: 14px;
 }
+
+/* Product card when coffee unavaiable */
+.coffee-unavaiable {
+    opacity: 0.5;
+}
+.coffee-unavaiable > button {
+    background-color: #E3DED7;
+}
+.coffee-unavaiable:hover {
+    background-color: #fff;
+}
+.coffee-unavaiable:hover > button {
+    background-color: #E3DED7;
+    cursor: auto;
+}
+
 
 /*** FAQ SECTION ***/
 

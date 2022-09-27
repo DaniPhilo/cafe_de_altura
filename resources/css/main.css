@@ -1054,3 +1054,74 @@ form > .cart-shipping-option > p {
     font-weight: 600;
     font-size: 14px;
 }
+
+/*** CHECKOUT SECTION ***/
+
+.checkout-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    width: 100%;
+    padding: 2.5rem;
+}
+
+.checkout-section > h2 {
+    color: #2A5B45;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.checkout-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.checkout-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 0.5rem;
+}
+
+.checkout-form-container > h3 {
+    color: #000000;
+    font-weight: 600;
+    font-size: 18px;;
+}
+
+.payment-method {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.debit-card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+.debit-card > input {
+    accent-color: #2A5B45;
+    width: 1rem;
+    height: 1rem;
+}
+.debit-card > label > p:first-child {
+    color: #000000;
+    font-weight: 600;
+    font-size: 14px;
+}
+.debit-card > label > p:last-child {
+    color: #000000;
+    font-weight: 400;
+    font-size: 14px;
+}

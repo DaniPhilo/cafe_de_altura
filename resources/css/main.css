@@ -11,6 +11,33 @@ body {
     font-family: 'Outfit';
 }
 
+/*** FLEX CONTAINERS ***/
+.flex-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-column-centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 /*** HEADERS && PARAGRAPHS ***/
 
 .h1 {
@@ -37,17 +64,19 @@ body {
     font-size: 14px;
 }
 
+.light-p {
+    color: #6B7280;
+    font-weight: 400;
+    font-size: 14px;
+}
+
 .small-p {
     color: #000000;
     font-weight: 400;
     font-size: 12px;
 }
 
-.light-p {
-    color: #6B7280;
-    font-weight: 400;
-    font-size: 14px;
-}
+
 
 .bold-p {
     color: #000000;
@@ -157,9 +186,6 @@ header {
 
 /* Logo */
 .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 0.5rem;
 }
 
@@ -170,16 +196,11 @@ header {
 
 /* Navbar */
 nav>ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 1rem;
     list-style-type: none;
 }
 
 nav>ul>li {
-    display: flex;
-    align-items: center;
     padding: 0.5rem;
     border-radius: 10px;
     cursor: pointer;
@@ -199,18 +220,11 @@ nav>ul>li>a {
 
 /* Phone and login btn */
 .phone-login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 1.5rem;
 }
 
 /* Phone button */
 .phone-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     gap: 0.5rem;
     cursor: pointer;
 }
@@ -220,11 +234,6 @@ nav>ul>li>a {
 /*** HERO ***/
 
 .hero-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
     width: 100%;
     padding: 3rem 2.5rem;
 
@@ -232,18 +241,11 @@ nav>ul>li>a {
 }
 
 .hero-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 1.5rem;
 }
 
 /* Hero content container */
 .hero-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     gap: 1rem;
 }
 
@@ -252,9 +254,6 @@ nav>ul>li>a {
 }
 
 .hero-btn-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 1rem;
 }
 
@@ -276,10 +275,6 @@ nav>ul>li>a {
 /*** INFO-CARDS SECTION ***/
 
 .info-cards-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 1.5rem;
 
     width: 100%;
@@ -296,18 +291,11 @@ nav>ul>li>a {
 
 /* Cards */
 .info-cards-container {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     gap: 1.5rem;
 }
 
 .info-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 1rem;
 
     width: 316px;
@@ -322,10 +310,6 @@ nav>ul>li>a {
 
 /* Card icons */
 .info-card-icon-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     width: 4rem;
     height: 4rem;
 
@@ -346,10 +330,6 @@ nav>ul>li>a {
 /*** PRODUCTS SECTION ***/
 
 .products-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 2.5rem;
     padding: 2.5rem;
 }
@@ -359,19 +339,12 @@ nav>ul>li>a {
 }
 
 .products-container {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     gap: 1.5rem;
 }
 
 /* Product cards */
 .product-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 1.5rem;
 
     width: 282px;
@@ -391,10 +364,6 @@ nav>ul>li>a {
 }
 
 .product-card-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 0.75rem;
 }
 
@@ -429,10 +398,6 @@ nav>ul>li>a {
 /*** FAQ SECTION ***/
 
 .faq-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 1.5rem;
 
     padding: 3rem 2.5rem;
@@ -444,20 +409,12 @@ nav>ul>li>a {
 }
 
 .faq-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 1rem;
 }
 
 /* FAQ cards */
 
 .faq-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 1rem;
 
     width: 100%;
@@ -481,10 +438,6 @@ nav>ul>li>a {
 }
 
 .faq-card-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 1rem;
 }
 
@@ -511,27 +464,16 @@ nav>ul>li>a {
 /*** FEATURE SECTION ***/
 
 .feature-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     width: 100%;
     padding: 3rem 2.5rem;
     background-color: #F7F5F3;
 }
 
 .feature-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 1.5rem;
 }
 
 .feature-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     gap: 1rem;
 }
 
@@ -557,10 +499,6 @@ nav>ul>li>a {
 /*** CONTACT SECTION ***/
 
 .contact-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     width: 100%;
 
     background-color: #E3DED7;
@@ -568,9 +506,6 @@ nav>ul>li>a {
 }
 
 .contact-section-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 1.5rem;
 
     width: 100%;
@@ -579,19 +514,11 @@ nav>ul>li>a {
 /** Contact info **/
 
 .contact-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     gap: 2rem;
     width: 50%;
 }
 
 .contact-content-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     gap: 0.75rem;
 }
 
@@ -601,25 +528,14 @@ nav>ul>li>a {
 
 
 .contact-content-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     gap: 1.5rem;
 }
 
 .contact-details {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     gap: 0.75rem;
 }
 
 .contact-details>div {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     gap: 0.75rem;
 }
 
@@ -638,19 +554,11 @@ nav>ul>li>a {
 }
 
 .contact-form>form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     gap: 1.5rem;
     padding: 0rem 1rem;
 }
 
 .contact-form>form>div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     gap: 4px;
 
     width: 100%;
@@ -662,12 +570,6 @@ nav>ul>li>a {
 
 .contact-form>form>div:nth-of-type(4) {
     margin-top: 1rem;
-}
-
-.contact-form>form>div:nth-of-type(5) {
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
 }
 
 .contact-form>form>div>label {
@@ -752,32 +654,25 @@ footer {
 
 .footer-container {
     position: absolute;
-    width: 1200px;
+    width: calc(100% - 40px);
     height: 204px;
     left: 40px;
     top: 28.61px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     gap: 1rem;
 }
 
 .footer-info {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
 
     width: 100%;
 }
 
 .footer-contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     gap: 1rem;
-    width: 47%;
+    width: 45%;
 }
 
 .footer-contact-info>h3 {
@@ -786,9 +681,6 @@ footer {
 }
 
 .footer-contact-info>a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 0.5rem;
     text-decoration: none;
 }
@@ -799,7 +691,7 @@ footer {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 8rem;
-    width: 53%;
+    width: 55%;
 }
 
 .footer-links-container>div {
@@ -836,10 +728,6 @@ footer {
 /*** CART ***/
 
 .cart-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 1.5rem;
 
     padding: 2.5rem;
@@ -995,10 +883,6 @@ form > .cart-shipping-option > p {
 /*** CHECKOUT SECTION ***/
 
 .checkout-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 1.5rem;
 
     width: 100%;
@@ -1133,10 +1017,6 @@ form > .cart-shipping-option > p {
 /*** SUCCESS SECTION ***/
 
 .success-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 1.5rem;
     padding: 2.5rem;
 }

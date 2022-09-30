@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="../resources/css/main.css">
     <title>Café de Altura</title>
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -32,13 +34,79 @@
                 <img src="../resources/images/icons/phone_icon.png" alt="">
                 <span>+34 919 49 05 18</span>
             </div>
-            <button type="button" class="login-btn">Iniciar sesión</button>
+            <button type="button" class="grey-button">Iniciar sesión</button>
         </div>
         <div class="cart-btn">
             <img src="../resources/images/icons/cart_icon.png" alt="">
         </div>
     </header>
-    
+
+    <main>
+        <section class="success-section">
+            <div class="success-text">
+                <div class="info-card-icon-container">
+                   <img src="../resources/images/icons/list_icon.png" alt=""> 
+                </div>
+                
+                <h2 class="h2">El pedido ha sido realizado con éxito</h2>
+                <div>
+                    <p class="p">El pedido #12387 se encuentra en preparación.</p>
+                    <p class="p">Lo recibirás dentro de las fechas acordadas en tu envío.</p>
+                    <p class="p">Hemos enviado un ticket a tu correo electrónico.</p>
+                </div>
+            </div>
+
+            <div class="products-table">
+
+                <h3 class="h3">Tu pedido</h3>
+
+                <div class="cart-product-card">
+                    <img src="../resources/images/img/products/coffee_bag_cart.png" alt="">
+                    <div class="product-info">
+                        <p class="bold-p">Colombia Los Naranjos</p>
+                        <p class="p">Paquete de café, 250 gr</p>
+                    </div>
+                    <p class="h3 product-price">9,00 €</p>
+                </div>
+
+                <div class="cart-product-card">
+                    <img src="../resources/images/img/products/coffee_bag_cart.png" alt="">
+                    <div class="product-info">
+                        <p class="bold-p">Colombia La Casita</p>
+                        <p class="p">Paquete de café, 250 gr</p>
+                    </div>
+                    <p class="h3 product-price">9,00 €</p>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="total-container">
+                    <div class="subtotal-details-container">
+                        <div class="subtotal-details">
+                            <p class="p">SUBTOTAL</p>
+                            <p class="bold-p">18,00 €</p>
+                        </div>
+                        <div class="shipping-details">
+                            <p class="p">ENVÍO</p>
+                            <p class="bold-p">GRATIS</p>
+                        </div>
+
+                    </div>
+                    <div class="cart-divider"></div>
+                    <div class="total-details-container">
+                        <p class="p">TOTAL</p>
+                        <div class="total-price">
+                            <p class="bold-p">18,00 €</p>
+                            <p>Incluye 3,78€ de IVA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="large-button" type="button">Volver a la tienda</button>
+        </section>
+    </main>
+
     <footer class="alt-footer">
         <div class="copyright-container">
             <p>Todos los derechos reservados - Café de Altura SL - 2022</p>
@@ -46,4 +114,5 @@
     </footer>
 
 </body>
+
 </html>

@@ -130,6 +130,13 @@ body {
     font-size: 12px;
 }
 
+.input-radio {
+    width: 1rem;
+    height: 1rem;
+    accent-color: #2A5B45;
+}
+
+
 /*** HEADER ***/
 
 header {
@@ -920,11 +927,6 @@ form > .cart-shipping-option {
     width: 100%;
 }
 
-form > .cart-shipping-option > input {
-    width: 1rem;
-    height: 1rem;
-    accent-color: #2A5B45;
-}
 form > .cart-shipping-option > label {
     width: 85%;
 }
@@ -1008,8 +1010,9 @@ form > .cart-shipping-option > p {
 .checkout-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     gap: 1.5rem;
+    width: 100%;
 }
 
 .checkout-form-container {
@@ -1018,7 +1021,7 @@ form > .cart-shipping-option > p {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 1.5rem;
-    
+    width: 65%;
     padding: 0.5rem;
 }
 
@@ -1028,6 +1031,7 @@ form > .cart-shipping-option > p {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 1.5rem;
+    width: 100%;
 }
 
 .debit-card,
@@ -1051,7 +1055,7 @@ form > .cart-shipping-option > p {
     align-items: flex-start;
     gap: 0.5rem;
 
-    width: 55%;
+    width: 40%;
 }
 
 .debit-card-info-group,
@@ -1068,4 +1072,58 @@ form > .cart-shipping-option > p {
     justify-content: flex-start;
     align-items: center;
     gap: 1.5rem;
+}
+.shipping-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:0.5rem;
+    width: 60%;
+}
+
+.shipping-address > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3px;
+    width: 100%;
+}
+
+.shipping-address > .form-address,
+.shipping-address > .form-city {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+
+    width: 100%;
+}
+.form-address > div,
+.form-city > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 100%;
+}
+.form-address > div > div,
+.form-city > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3px;
+    width: 100%;
+}
+
+.total-details-container > .total-price {
+    text-align: end;
+}
+.checkout-container > .total-container > .total-btns > button {
+    background-color: rgbA(42, 91, 69, 0.3);
+    color: #fff;
 }

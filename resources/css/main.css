@@ -740,31 +740,17 @@ footer {
 }
 
 .cart-container {
-    display: flex;
-    justify-content: flex-start;
     align-items: flex-start;
     gap: 1.5rem;
-
     width: 100%;
 }
 
 /** Product cart details **/
 
 .products-table {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
     gap: 1.5rem;
-
     flex-grow: 8;
     padding: 0.5rem;
-}
-
-.cart-divider {
-    width: 100%;
-    height: 1px;
-    background-color: #E3DED7;
 }
 
 .cart-product-card {
@@ -776,16 +762,9 @@ footer {
 }
 
 .quantity-controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 0.5rem;
 }
 .quantity-controls > .quantity {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     width: 24px;
     height: 24px;
 
@@ -801,50 +780,32 @@ footer {
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
     gap: 1.5rem;
     width: 100%;
 }
 
 form > .cart-shipping-option {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
     width: 100%;
 }
 
 form > .cart-shipping-option > label {
-    width: 85%;
+    padding: 0 1rem;
 }
+
 form > .cart-shipping-option > p {
-    color: #000000;
-    font-weight: 600;
-    font-size: 18px;
+    margin-left: auto;
 }
 
 /** Total details **/
 
 .total-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     gap: 1rem;
-
     flex-grow: 1;
     padding: 1.5rem;
     background-color: #F7F5F3;
 }
 
 .subtotal-details-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     gap: 1rem;
     width: 100%;
 }
@@ -855,7 +816,6 @@ form > .cart-shipping-option > p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     width: 100%;
 }
 .total-details-container > .total-price > p:last-child {
@@ -865,19 +825,14 @@ form > .cart-shipping-option > p {
 }
 
 .total-btns {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     gap: 1rem;
 }
 .total-btns > button:first-child {
     background-color: #2A5B45;
-    font-weight: 600;
 }
 .total-btns > button:last-child {
     background-color: #F7F5F3;
     color: #2A5B45;
-    font-weight: 600;
 }
 
 /*** CHECKOUT SECTION ***/

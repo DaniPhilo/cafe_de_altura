@@ -857,20 +857,12 @@ form > .cart-shipping-option > p {
 }
 
 .checkout-form-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
     gap: 1.5rem;
     width: 65%;
     padding: 0.5rem;
 }
 
-.payment-method {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+.payment-method {   
     gap: 1.5rem;
     width: 100%;
 }
@@ -878,9 +870,6 @@ form > .cart-shipping-option > p {
 .debit-card,
 .transfer,
 .bizum {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     gap: 1rem;
 }
 .debit-card > input {
@@ -890,10 +879,6 @@ form > .cart-shipping-option > p {
 }
 
 .debit-card-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     gap: 0.5rem;
 
     width: 40%;
@@ -901,62 +886,34 @@ form > .cart-shipping-option > p {
 
 .debit-card-info-group,
 .debit-card-info-group > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     gap: 3px;
     width: 100%;
 }
 .debit-card-info-group:nth-of-type(3) {
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
     gap: 1.5rem;
 }
 .shipping-address {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     gap:0.5rem;
     width: 60%;
 }
 
 .shipping-address > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     gap: 3px;
     width: 100%;
 }
 
 .shipping-address > .form-address,
 .shipping-address > .form-city {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
     gap: 1.5rem;
 
     width: 100%;
 }
 .form-address > div,
 .form-city > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 0.5rem;
+    gap: 1.5rem;
     width: 100%;
 }
-.form-address > div > div,
-.form-city > div > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+.form-address > div > div {
     gap: 3px;
     width: 100%;
 }
